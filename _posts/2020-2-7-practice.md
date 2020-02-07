@@ -1,4 +1,4 @@
-#审美课
+# 审美课
 
 ```
 h,w=map(int,input().split())
