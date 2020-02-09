@@ -95,4 +95,12 @@ try:
 except:
     print(0)
 ```
-    
+# 打开文件
+二进制格式打开文件，文件编码格式检测，指定编码格式写入。
+```
+import chardet
+with open("三国演义.txt","rb+") as f:
+    print(chardet.detect(f.readline()))
+    f.seek(-1,2)
+    f.write('hello'.encode('utf-8'))
+```
