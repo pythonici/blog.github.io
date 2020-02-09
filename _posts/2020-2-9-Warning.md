@@ -19,11 +19,7 @@ returning scalar, but in the future will perform elementwise comparison
 
 Numpy说是布尔的ndarray，Pythonic开发人员不同意，经典的对峙。
 
-如果您的代码或库使用in或==运算符将python字符串与numpy ndarrays比较，则它们不兼容。
-
-因此，当您尝试使用它时，它将返回标量，但仅在现在。警告表示将来这种行为可能会改变，
-
- Numpy和Python处于僵持状态，目前操作返回标量，但将来可能会改变。
+如果您的代码或库使用in或==运算符将python字符串与numpy ndarrays比较，则它们不兼容。因此，当您尝试使用它时，它将返回标量，但仅在现在。警告表示将来这种行为可能会改变，Numpy和Python处于僵持状态，目前操作返回标量，但将来可能会改变。
  
  两种解决方法： 锁定您的python和numpy版本，忽略警告并期望行为不会改变。
  
