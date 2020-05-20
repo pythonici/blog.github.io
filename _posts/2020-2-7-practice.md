@@ -1,6 +1,6 @@
 # 审美课
 
-```
+```python
 h,w=map(int,input().split())
 A=[[None]*w for i in range(h)]
 count=0
