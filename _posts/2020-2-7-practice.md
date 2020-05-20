@@ -1,6 +1,6 @@
 # 审美课
 
-```python
+~~~python
 h,w=map(int,input().split())
 A=[[None]*w for i in range(h)]
 count=0
@@ -20,7 +20,7 @@ for i in range(h):
             count+=1
         flag=0
 print(count)
-```
+~~~
 #  最小公倍数
 
 ```
