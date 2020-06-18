@@ -30,7 +30,7 @@ print(a*b//math.gcd(a,b))
 ```
 # 龟兔赛跑预测
 刚开始看到这个题目以为要列一个物理关系，后来想到一秒一秒去求时间反而更简单。
-```
+```python
 v1,v2,t,s,l=map(int,input().split())
 len1=len2=m1=m2=0
 while len1<l and len2<l :
@@ -55,7 +55,7 @@ else:
 ```
 #  FJ的字符串
   归纳证明和递归的本质是一样的。
- ```
+ ```python
   def f(n):
     if n==1:
         return   "A"
@@ -65,7 +65,7 @@ n=int(input())
 print(f(n))
 ```
 # 字母图形
-```
+```python
 n,m=input().split()
 for j in range(int(n)):
         if j>int(m):
@@ -81,12 +81,12 @@ for j in range(int(n)):
  
 # 表达式计算
 虽然eval()的速度慢并且有安全风险，但是它可以传表达式进来，某些情况下很方便。
- ```
+ ```python
 s=input()
 print(eval(s))
 ```
 # 闰年判断
-```
+```python
 from datetime import datetime
 s=int(input())
 try:
@@ -97,7 +97,7 @@ except:
 ```
 # 打开文件
 二进制格式打开文件，文件编码格式检测，指定编码格式写入。
-```
+```python
 import chardet
 with open("三国演义.txt","rb+") as f:
     print(chardet.detect(f.readline()))
@@ -105,7 +105,7 @@ with open("三国演义.txt","rb+") as f:
     f.write('hello'.encode('utf-8'))
 ```
 # 一元一次方程的解
-```
+```python
 n=''
 a,b=input().split("=")
 if '+' in a or '-'in a:
@@ -125,7 +125,7 @@ n=eval(n)
 print("%c=%.3f"%(y,-n.real/n.imag))
 ```
 # CF6A Triangle
-```
+```python
 flag=100
 n=list(map(int,input().split()))
 x=[None]*10
@@ -153,7 +153,7 @@ else:
     print("IMPOSSIBLE")
 ```
 # 填涂颜色
-```
+```python
 x=[0,0,1,-1]
 y=[1,-1,0,0]
 n=int(input())
@@ -198,7 +198,7 @@ for i in range(n):
     print()
 ```
 # 数楼梯
-```
+```python
 n=int(input())
 m=[]
 if n==0:
@@ -219,7 +219,7 @@ else:
     print(m[n-1])
 ```
 # 拼数
-```
+```python
 n=int(input())
 s=map(int,input().split())
 s=sorted(s,reverse=True)
@@ -236,7 +236,7 @@ for i in s:
 print(int(p))
 ```
 # 纪念品分组
-```
+```python
 w=int(input())
 n=int(input())
 x=[]
@@ -262,7 +262,7 @@ for i in range(n+1):
 print(ans)
 ```
 # 均分纸牌
-```
+```python
 n=int(input())
 f=input().split()
 m=[]
@@ -280,7 +280,7 @@ for i in range(n-1):
 print(ans)
 ```
 # 分数线划定
-```
+```python
 n,m=map(int,input().split())
 z=[]
 for i in range(n):
@@ -305,7 +305,7 @@ for i in range(count):
 ```
 # 贪心
 选择最早结束的课，然后选择这一节课结束后开始的课，重复这两个步骤。
-```
+```python
 b=-1
 ans=0
 m=[]
