@@ -1,8 +1,0 @@
-title: Pythonici.GitHub.io
-description: Build a Jekyll blog in minutes, without touching the command line.
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-architect
-
-gems:
-  - jekyll-mentions
